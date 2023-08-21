@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NGO WEBSITE </title>
+    <link rel="Stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fullcontainer banner" id="homeSection">
+        <header>
+            <div class ="container">
+                <div class="logo">
+                    <img src="logo.jpeg" alt="NGO logo" />
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#homeSection">Home</a>
+                        </li>
+                        <li>
+                            <a href="#aboutSection">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#programSection">Programs</a>
+                        </li>
+                        
+                    </ul>
+
+                </nav>
+
+            </div>
+        </header>
+        
+        <div class="container">
+
+            <h1>Leftover Lovin' : Sharing the food and <span> spreading the joy </span></h1>
+            <p>
+                We dream of making India's Global Index Hunger 00.0 as of now from the
+                report of 2022 India's GMI report is 29.1 & it stands on 107th out of 121th rank.
+                We vision about the nation where no one sleeps with the empty stomach
+
+            </p>
+        </div>
+        <button>
+            Start with a little
+        </button>
+    </div>
+
+    <section class="fullcontainer" id="aboutSection">
+        <div class="container">
+            <h2 class ="sectionTitle"> About Us </h2>
+            <p>
+              When have excess of food why to waste it?? According to FSSAI (Food Safety and Standards Authority of India), 
+              one-third of all food in India is wasted or gets spoilt before eaten. We here trying our best to save the food.    
+              Our web-development has a two major personalities one the food provider and other the volunteers. 
+              Food providers are the ones who had bulk of food with them and they are keen to distribute it 
+              Whereas, the Volunteers are the ones who assign themselves to this task in order to disribute food among the needy ones or to submit bin compost it 
+            </p>
+            <div class ="cards">
+                <div class ="donationBox">
+                    <div class="title">Give Donation</div>
+                    <p>
+                        Food
+
+                    </p>
+                    
+                    <a href="#programSection.html"><button>Donate Now</button></a>
+                </div>
+                <!--Donation box end-->
+            
+                <div class ="volunteerBox">
+                    <div class="title">Become a volunteer</div>
+                    <p>
+                        Certificate will be provided to every volunteer who has atleast completed 5 drives
+
+                    </p>
+                    <button>
+                        Become Now
+                    </button>
+                </div>    
+                
+                <div class ="foodprovider">
+                    <div class="title">Give food </div>
+                    <p>
+                        Give food in order to provide it among the needy people or the stray animals                
+                       </p>
+                    <button> Provide Now </button>
+                </div> 
+                <!--Donation Box end-->
+                </div>
+                </div>
+             </section>
+             <!-- .aboutSection end here-->
+             <form action="/food-provider" method="POST">
+                <h2>Food Provider</h2>
+                <label for="provider-name">Name:  </label>
+                <input type="text" id="provider-name" name="name" placeholder="enter name here"><br><br>
+                <label for="provider-email">Email:  </label>
+                <input type="email" id="provider-email" name="email" placeholder="abc@fmail.com"><br><br>
+                <label for="provider-phone">Phone:  </label>
+                <input type="tel" id="provider-phone" name="phone" placeholder="enter your number"><br><br>
+                <label for="Provider-Address">Address:</label>
+                <input type="address" id="provider-address" address="address" placeholder="enter address here"><br><br>
+                <h3>Food Details</h3>
+                <label for="food-quantity">Quantity:</label>
+                <input type="number" id="food-quantity" name="quantity"><br><br>
+                <label for="food-type">Type:</label>
+                <select id="food-type" name="type">
+                  <option value="touched">Touched</option>
+                  <option value="untouched">Untouched</option>
+                </select><br><br>
+                <input type="submit" value="Submit">
+              </form>
+              <form action="/volunteer" method="POST">
+                <h2>Volunteer</h2>
+                <label for="volunteer-name">Name:</label>
+                <input type="text" id="volunteer-name" name="name"><br><br>
+                <label for="volunteer-email">Email:</label>
+                <input type="email" id="volunteer-email" name="email"><br><br>
+                <label for="volunteer-phone">Phone:</label>
+                <input type="tel" id="volunteer-phone" name="phone"><br><br>
+                <input type="submit" value="Submit">
+              </form>
+</body>
+</html>
