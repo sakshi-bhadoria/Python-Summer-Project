@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Donation Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <h1>FOOD DONATION WEBSITE</h1>
+  <form action="/food-provider" method="POST">
+    <h2>Food Provider</h2>
+    <label for="provider-name">Name:  </label>
+    <input type="text" id="provider-name" name="name" placeholder="enter name here"><br><br>
+    <label for="provider-email">Email:  </label>
+    <input type="email" id="provider-email" name="email" placeholder="abc@fmail.com"><br><br>
+    <label for="provider-phone">Phone:  </label>
+    <input type="tel" id="provider-phone" name="phone" placeholder="enter your number"><br><br>
+    <label for="Provider-Address">Address:</label>
+    <input type="address" id="provider-address" address="address" placeholder="enter address here"><br><br>
+    <h3>Food Details</h3>
+    <label for="food-quantity">Quantity:</label>
+    <input type="number" id="food-quantity" name="quantity"><br><br>
+    <label for="food-type">Type:</label>
+    <select id="food-type" name="type">
+      <option value="touched">Touched</option>
+      <option value="untouched">Untouched</option>
+    </select><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <form action="/volunteer" method="POST">
+    <h2>Volunteer</h2>
+    <label for="volunteer-name">Name:</label>
+    <input type="text" id="volunteer-name" name="name"><br><br>
+    <label for="volunteer-email">Email:</label>
+    <input type="email" id="volunteer-email" name="email"><br><br>
+    <label for="volunteer-phone">Phone:</label>
+    <input type="tel" id="volunteer-phone" name="phone"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
